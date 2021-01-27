@@ -9,6 +9,18 @@
   margin-top: 25px;
   margin-bottom: 25px;
   font-size: 2.5rem;
+  position: relative;
+}
+
+.App h1::before{
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 117px;
+  bottom: 3px;
+  left: 0;
+  border-radius: 8x;
+  background: linear-gradient(45deg, #8e2de2, #4a00e0);
 }
 
 .App p {
