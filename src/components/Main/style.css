@@ -56,20 +56,21 @@
 
 .container .characters-list {
     display: grid;
-    grid-template-columns: repeat( 4, minmax(280px, 1fr) );
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr) );
     /* grid-template-columns: repeat(
       auto-fit,
       minmax(200px, 1fr)
     ); */
     list-style: none;
     /* grid-gap: 1.5rem; */
-    @media screen and (max-width: 500px) {
-        margin: auto;
-        padding: 15px;
-        display: flex;
-}
 }
 
+@media (min-width: 700px) {
+  .container .characters-list {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .container .characters-list .card {
     position: relative;
     width: 280px;
