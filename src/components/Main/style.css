@@ -44,33 +44,27 @@
 .container {
     position: relative;
     display: flex;
+    justify-items: center;
     justify-content: center;
     align-items: center;
     max-width: 100vw;
-    flex-wrap: wrap;
-    @media screen and (max-width: 500px) {
-        margin: auto;
-        padding: 15px;
-}
 }
 
 .container .characters-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr) );
-    /* grid-template-columns: repeat(
+    grid-template-columns: repeat(
       auto-fit,
       minmax(200px, 1fr)
-    ); */
+    );
     list-style: none;
-    /* grid-gap: 1.5rem; */
 }
-
-@media (min-width: 700px) {
+/* 
+@media (min-width: 700px) { */
   .container .characters-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
-}
 .container .characters-list .card {
     position: relative;
     width: 280px;
@@ -110,6 +104,7 @@
 
 .container .characters-list .card .content img {
     max-width: 50%;
+    margin-top: 10px;
     border: 2px solid #fff;
 }
 

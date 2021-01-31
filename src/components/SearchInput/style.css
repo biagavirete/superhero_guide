@@ -1,5 +1,5 @@
 .main-container {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.61);
     max-width: 500px;
     max-height: 10vh;
     padding: 2rem;
@@ -40,6 +40,8 @@
 
 .input-container .input-field input {
   outline: none;
+  background: transparent;
+  border: 0;
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.7);
 }

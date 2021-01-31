@@ -8,19 +8,6 @@ function CharacterDataReactHooks() {
     const [text, setText] = useState('');
     const [loading, setLoading] = useState(false);
 
-    // useEffect(() => {
-    //     if (text) {
-    //         setData({});
-    //         fetch(`${api}/search/${text}`)
-    //             .then((response) => response.json())
-    //             .then((response) => {
-    //                 setData(response);
-    //                 console.log('o que vem', response)
-    //             });
-    //     }
-
-    // }, [text]);
-
     useEffect(() => {
         if (text) {
             async function fetchMyAPI() {
@@ -35,7 +22,6 @@ function CharacterDataReactHooks() {
             } catch (e) {
                 console.log(e)
                 setLoading(false)
-
             }
             setLoading(false)
         }
