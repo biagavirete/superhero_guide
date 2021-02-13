@@ -18,15 +18,16 @@ main::before {
   clip-path: circle(30% at right 70%);
 }
 
-main::after {
-  content: '';
+main #back {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 35%;
-  height: 35%;
-  background: linear-gradient(#f3cd21, #db1557);
-  clip-path: circle(20% at left 10%);
+  top: 3rem;
+  border: 0;
+  left: 3rem;
+}
+
+main #back svg:active {
+  transform: scale(1.2);
+  color: #8e2de2;
 }
 
 .character-card {
@@ -48,7 +49,10 @@ main::after {
 }
 
 .character-card #card-content {
-  padding: 10rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   text-align: center;
 }
 
@@ -62,9 +66,13 @@ main::after {
 }
 
 .character-card  #card-content h3 {
-  font-size: 1.8em;
+  font-size: 3em;
   color: #fff;
   z-index: 1;
+}
+
+.character-card  #card-content #img-container {
+  padding-right: 5rem;
 }
 
 .character-card  #card-content img {
@@ -72,6 +80,18 @@ main::after {
   height: 300px;
   object-fit:cover;
   border-radius: 50%;
-  margin-top: 10px;
   border: 2px solid #fff;
+}
+
+.character-card  #card-content #text-container p {
+  line-height: 30px;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  font-size: 1.2rem;
+}
+
+
+.character-card #card-content #power-stats {
+  display: inline;
+  padding-left: 5rem;
 }
