@@ -9,14 +9,8 @@
 }
 
 body {
-    /* background: linear-gradient(45deg, #8e2de2, #4a00e0);
-    background-repeat: no-repeat; */
     min-height: 100vh;
     min-width: 100vw;
     color: #fff;
     background-color: #000;
-    /* background-image: url(./assets/wallpaperflare.com_wallpaper.jpg);
-    background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;  */
 }

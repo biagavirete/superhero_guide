@@ -1,7 +1,6 @@
 .App {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   flex-direction: column;
   background: #000000;
   min-height: 100vh;
@@ -65,8 +64,7 @@
     );
     list-style: none;
 }
-/* 
-@media (min-width: 700px) { */
+
   .container .characters-list {
     display: flex;
     flex-direction: row;
@@ -118,14 +116,6 @@
 .container .characters-list .card .content a {
     position: relative;
     display: inline-block;
-    /* padding: 8px 20px;
-    margin-top: 15px;
-    background: #fff;
-    color: #000;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: 600;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
     margin-top: 15px;
     padding: 8px 20px;
     background: linear-gradient(to left, #4776e6, #8e54e9);

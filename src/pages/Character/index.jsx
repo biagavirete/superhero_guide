@@ -16,8 +16,6 @@ const Character = () => {
       .then(response => setCharacterDetails(response.data))
   }, [params.id])
 
-  console.log(characterDetails)
-
   return (
     <>
       <main>
