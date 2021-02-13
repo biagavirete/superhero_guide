@@ -5,6 +5,7 @@ import './styles.css';
 import GitHubCorner from '../../components/GithubCorner';
 import ProgressBar from '../../components/ProgressBar';
 import { FaArrowCircleLeft } from 'react-icons/fa';
+import { Helmet } from 'react-helmet';
 
 const Character = () => {
   const [characterDetails, setCharacterDetails] = useState();
@@ -18,6 +19,9 @@ const Character = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Character information</title>
+      </Helmet>
       <main>
         <div id="back">
           <Link to="/"> <FaArrowCircleLeft size={70} /> </Link></div>
