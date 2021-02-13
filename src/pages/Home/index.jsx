@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import api from '../../services/api';
 import './styles.css';
 import SearchInput from '../../components/SearchInput';
+import GitHubCorner from '../../components/GithubCorner';
 
 const Home = () => {
   const [data, setData] = useState({});
@@ -53,6 +54,7 @@ const Home = () => {
           </ul>
         </div>
       )}
+      <GitHubCorner projectUrl="https://github.com/biagavirete" />
     </div>
   );
 }
