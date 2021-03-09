@@ -14,8 +14,6 @@ const Home = () => {
       async function fetchMyAPI() {
         api.get(`/search/${text}`)
           .then(response => setData(response.data))
-
-        console.log(data.results)
       }
       try {
         fetchMyAPI()
@@ -25,6 +23,9 @@ const Home = () => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [text])
+
+  console.log(data.results)
+  console.log(data)
 
   return (
     <div className="App">
