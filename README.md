@@ -37,3 +37,10 @@ $  yarn start
 * React Helmet
 * Axios
 * Styled-components
+
+## Todo
+
+- [ ] Migrate to TypeScript
+- [ ] Improve loading state
+- [ ] Error handling
+- [ ] Write tests
