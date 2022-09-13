@@ -38,7 +38,7 @@ $  yarn start
 * Axios
 * Styled-components
 
-## Todo
+## To-do
 
 - [ ] Migrate to TypeScript
 - [ ] Improve loading state
