@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import api from '../../services/api';
 import './styles.css';
 import GitHubCorner from '../../components/GithubCorner';
 import ProgressBar from '../../components/ProgressBar';
 import { FaArrowCircleLeft } from 'react-icons/fa';
 import { Helmet } from 'react-helmet';
+import axios from 'axios';
 
 const Character = () => {
   const [characterDetails, setCharacterDetails] = useState();
@@ -13,7 +13,7 @@ const Character = () => {
   const params = useParams();
 
   useEffect(() => {
-    api.get(`/${params.id}`)
+    axios.get(`/${params.id}`)
       .then(response => setCharacterDetails(response.data))
   }, [params.id])
 

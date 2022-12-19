@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import api from '../../services/api';
+import axios from 'axios';
 import './styles.css';
 import SearchInput from '../../components/SearchInput';
 import GitHubCorner from '../../components/GithubCorner';
@@ -13,7 +13,7 @@ const Home = () => {
   useEffect(() => {
     if (text) {
       async function fetchMyAPI() {
-        api.get(`/search/${text}`)
+        axios.get(`/search/${text}`)
           .then(response => setData(response.data))
       }
       try {

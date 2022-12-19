@@ -2,6 +2,7 @@
   "name": "listagem",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://superheroapi.com/api/10159142286944414",
   "homepage": "./",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -15,7 +16,7 @@
     "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
-    "styled-components": "^5.2.1",
+    "styled-components": "^5.3.6",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
